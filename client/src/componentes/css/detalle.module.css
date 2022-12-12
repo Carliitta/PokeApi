@@ -1,0 +1,155 @@
+.items{
+
+    padding: 30px;
+    background: transparent;
+    margin-left: 40px;
+    width: 400px;
+    height: 500px;
+    float: left;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  .img{
+    width: 25%;
+    float: left;
+    margin-top: 80px;
+  }
+  .container{
+    padding-top: 150px;
+    margin-left: 20%;
+  }
+  .skills:not(:last-child){
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+.detalle{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.menu{
+  position: relative;
+  border:1px solid var(--color-celeste);
+  margin-bottom: 10px;
+}
+
+@keyframes vida-barra{
+  100%{
+    width: 100%;
+  }
+}
+  .name{
+    font-size: 35px;
+    color: var(--color-celeste);
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  b{
+    color: var(--color-verde);
+  }
+
+  .loadingDiv{
+    margin: 0;
+    background-position: 80px;
+    min-height: 765px;
+    display: block;
+    padding: 20px;
+  }
+.loadingp{
+ 
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  color: rgb(245, 241, 241);
+  padding: 5px;
+ 
+}
+
+.spinner {
+  margin-left: 49%;
+  border: 4px solid rgba(0, 0, 0, 0.349);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(246, 249, 252);
+  animation: spin 1s ease infinite;
+}
+.typecontainer{
+display: inline-flex;
+ margin-right: 10px;
+}
+.typecontainer p{
+  font-size: 25px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+ .typecontainer p{
+font-size: 20px;
+ }
+ .detalle{
+  margin-bottom: 2px;
+ }
+ .img{
+  margin-top: 100px;
+  width: 270px;
+ }
+  }
+
+  @media only screen and (max-width: 768px) {
+ p{
+  font-size: 18px;
+ }
+ .name{
+  font-size: 30px;
+ }
+    .detalle{
+     margin-bottom: 2px;
+    }
+    .img{
+     margin-top: 100px;
+     width: 200px;
+    }
+    .items{
+      width: 300px;
+    
+    }
+    .container{
+      margin-left: 80px;
+    }
+     }
+
+     @media only screen and (max-width: 425px) {
+      .container{
+        display: block;
+        margin-left: 10px;
+        padding-top: 90px;
+      }
+      .items{
+        width: 250px;
+      }
+      .img{
+        margin-left: 25%;
+      }
+     }
+
+     @media only screen and (max-width: 375px) {
+      .container{
+      
+        margin-left: 0px;
+       
+      }
+    }

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+body{
+  background-color: var(--color-amarillo);
+}
+:root {
+    --color-celeste: rgb(68, 124, 209);
+    --color-amarillo: rgba(224, 238, 25, 0.945);
+    --color-verde:rgb(72, 212, 44);
+  }
+
+.inicioBtn{
+ 
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+ justify-content: center;
+  background: rgb(230, 17, 17);
+  border: 2px solid black;
+  color: rgba(248, 242, 242, 0.993);
+  font-size: 25px;
+  text-align: center;
+  margin-top: 100px;
+
+
+}
+.inicioBtn:hover{
+    cursor: pointer;
+    box-shadow: #e4247d 0px 0px 12px 2px inset,#e4247d  0px 0px 12px 2px;
+   
+}
+.inicio{
+    width: 1600px;
+    height:789px;
+    background:url("../../img/fondoPokemon.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

@@ -1,0 +1,129 @@
+.contenedorNav{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 90px;
+   
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+    background-color: var(--color-celeste);
+  
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.buscador{
+width: 300px;
+height: 30px;
+border-radius: 8px;
+padding-left: 10px;
+border: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+.submit{
+    width: 70px;
+    height: 30px;
+    margin-left:2px;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: var(--color-amarillo)
+}
+.logo{
+    width: 130px;
+    height: 30;
+    margin-right: 50px;
+}
+.linkCrear{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+}
+.filtros{
+    display: flex;
+    
+}
+.filtros h3{
+    color:#fff
+}
+.filtros, select{
+    margin-left: 5px;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.reload{
+    width: 35px;
+}
+.btnRecargar{
+    background: none;
+    border: none;
+}
+.btnRecargar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .nav{
+        justify-content: space-between;
+        padding: 10px;
+    }
+.buscador{
+    width: 120px;
+}
+.submit{
+ width: 60px;
+}
+.logo{
+    width: 100px;
+  margin-right: 20px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+.nav{
+    display: block;
+
+}
+.buscador,.submit{
+    height: 25px;
+    margin-bottom: 10px;
+    
+}
+.buscador{
+    width: 170px;
+}
+.buscador , .filtros{
+    margin-left: 20%;
+}
+.filtros select{
+    height: 25px;
+  
+}
+.btnRecargar{
+    display: none;
+}
+.logo{
+    margin-left: 35%;
+    margin-bottom: 10px;
+    width: 130px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+    .buscador , .filtros{
+        margin-left: 15%;
+    }
+    .logo{
+        margin-left: 30%;
+    }
+
+     option{
+       font-size: 12px
+    }
+  }
